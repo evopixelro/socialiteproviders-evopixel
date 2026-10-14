@@ -1,0 +1,56 @@
+{
+    "name": "evopixel/socialiteproviders-evopixel",
+    "description": "EvoPixel Account OAuth2 provider for Laravel Socialite",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "evopixel",
+        "laravel",
+        "oauth",
+        "provider",
+        "socialite"
+    ],
+    "authors": [
+        {
+            "name": "EvoPixel"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/evopixelro/socialiteproviders-evopixel/issues",
+        "source": "https://github.com/evopixelro/socialiteproviders-evopixel",
+        "docs": "https://github.com/evopixelro/socialiteproviders-evopixel#readme"
+    },
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "socialiteproviders/manager": "^4.3",
+        "ext-openssl": "*",
+        "firebase/php-jwt": "^6.10 || ^7.0"
+    },
+    "conflict": {
+        "laravel/socialite": "<5.2.1"
+    },
+    "require-dev": {
+        "illuminate/session": "^8.83 || ^9.0 || ^10.0 || ^11.0 || ^12.0",
+        "mockery/mockery": "^1.6",
+        "phpunit/phpunit": "^9.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "SocialiteProviders\\EvoPixel\\": ""
+        },
+        "exclude-from-classmap": [
+            "/tests/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SocialiteProviders\\EvoPixel\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "@php vendor/phpunit/phpunit/phpunit --do-not-cache-result"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
